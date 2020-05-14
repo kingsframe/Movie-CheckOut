@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2118d1bd-21b3-497e-9d94-d19623c7de2d" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1XetRo77UUzeEoKXIDVUD43bUW7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT" />
+    <property name="js.last.introduce.type" value="CONST" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="settings.saveactions" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages" />
+      <recent name="$PROJECT_DIR$/src/components" />
+    </key>
+    <key name="es6.move.members.recent.items">
+      <recent name="$PROJECT_DIR$/src/components/ProgressStepper.tsx" />
+      <recent name="$PROJECT_DIR$/src/pages/PaymentComponent.tsx" />
+      <recent name="$PROJECT_DIR$/src/components/HorizontalPagePreviews.tsx" />
+      <recent name="$PROJECT_DIR$/src/components/BottomButton.tsx" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/components" />
+      <recent name="$PROJECT_DIR$/src/mockData" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.start">
+    <configuration name="start-prod" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start-prod" />
+      </scripts>
+      <node-interpreter value="project" />
+      <package-manager value="yarn" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <package-manager value="yarn" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="npm.start" />
+      <item itemvalue="npm.start-prod" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2118d1bd-21b3-497e-9d94-d19623c7de2d" name="Default Changelist" comment="" />
+      <created>1581418382571</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581418382571</updated>
+      <workItem from="1581418384160" duration="40722000" />
+      <workItem from="1581626003288" duration="4896000" />
+      <workItem from="1581640957909" duration="83233000" />
+      <workItem from="1582087862093" duration="19745000" />
+      <workItem from="1582164537047" duration="65555000" />
+      <workItem from="1582863073840" duration="66038000" />
+      <workItem from="1583545859715" duration="39140000" />
+      <workItem from="1584198445112" duration="7735000" />
+      <workItem from="1584381297355" duration="1097000" />
+      <workItem from="1584551025600" duration="86000" />
+      <workItem from="1584983694033" duration="165000" />
+      <workItem from="1585536049077" duration="49869000" />
+      <workItem from="1586052438985" duration="2447000" />
+      <workItem from="1586266101982" duration="1770000" />
+      <workItem from="1586366179135" duration="271000" />
+      <workItem from="1586378941505" duration="1921000" />
+      <workItem from="1586558629450" duration="4801000" />
+      <workItem from="1586892975917" duration="5062000" />
+      <workItem from="1587342641271" duration="3032000" />
+      <workItem from="1587757506684" duration="6165000" />
+      <workItem from="1589049106774" duration="1513000" />
+      <workItem from="1589052423592" duration="6741000" />
+      <workItem from="1589396420652" duration="36917000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2641" y="606" width="1099" height="811" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585777418991">
+      <screen x="0" y="0" width="3840" height="2160" />
+    </state>
+    <state x="2641" y="606" width="1099" height="811" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.3840.2160@0.0.3840.2160" timestamp="1585777418991" />
+    <state x="2074" y="733" width="642" height="602" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1584382410365">
+      <screen x="0" y="0" width="3840" height="2160" />
+    </state>
+    <state x="2074" y="733" width="642" height="602" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.3840.2160@0.0.3840.2160" timestamp="1584382410365" />
+    <state x="553" y="603" width="792" height="742" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1581554146998">
+      <screen x="0" y="0" width="3840" height="2160" />
+    </state>
+    <state x="553" y="603" width="792" height="742" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.3840.2160@0.0.3840.2160" timestamp="1581554146998" />
+    <state x="2738" y="591" width="913" height="886" key="#start" timestamp="1581418537034">
+      <screen x="0" y="0" width="3840" height="2160" />
+    </state>
+    <state x="2738" y="591" width="913" height="886" key="#start/0.0.3840.2160@0.0.3840.2160" timestamp="1581418537034" />
+    <state x="580" y="436" width="642" height="715" key="FileChooserDialogImpl" timestamp="1587053401029">
+      <screen x="0" y="0" width="3840" height="2160" />
+    </state>
+    <state x="580" y="436" width="642" height="715" key="FileChooserDialogImpl/0.0.3840.2160@0.0.3840.2160" timestamp="1587053401029" />
+    <state width="1879" height="530" key="GridCell.Tab.0.bottom" timestamp="1589497958306">
+      <screen x="0" y="0" width="3840" height="2160" />
+    </state>
+    <state width="1879" height="530" key="GridCell.Tab.0.bottom/0.0.3840.2160@0.0.3840.2160" timestamp="1589497958306" />
+    <state width="1879" height="530" key="GridCell.Tab.0.center" timestamp="1589497958305">
+      <screen x="0" y="0" width="3840" height="2160" />
+    </state>
+    <state width="1879" height="530" key="GridCell.Tab.0.center/0.0.3840.2160@0.0.3840.2160" timestamp="1589497958305" />
+    <state width="1879" height="530" key="GridCell.Tab.0.left" timestamp="1589497958305">
+      <screen x="0" y="0" width="3840" height="2160" />
+    </state>
+    <state width="1879" height="530" key="GridCell.Tab.0.left/0.0.3840.2160@0.0.3840.2160" timestamp="1589497958305" />
+    <state width="1879" height="530" key="GridCell.Tab.0.right" timestamp="1589497958306">
+      <screen x="0" y="0" width="3840" height="2160" />
+    </state>
+    <state width="1879" height="530" key="GridCell.Tab.0.right/0.0.3840.2160@0.0.3840.2160" timestamp="1589497958306" />
+    <state x="283" y="342" width="1516" height="1083" key="SettingsEditor" timestamp="1581626110679">
+      <screen x="0" y="0" width="3840" height="2160" />
+    </state>
+    <state x="283" y="342" width="1516" height="1083" key="SettingsEditor/0.0.3840.2160@0.0.3840.2160" timestamp="1581626110679" />
+    <state x="1215" y="0" width="960" height="2125" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1581987881029">
+      <screen x="0" y="0" width="3840" height="2160" />
+    </state>
+    <state x="1215" y="0" width="960" height="2125" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.3840.2160@0.0.3840.2160" timestamp="1581987881029" />
+    <state x="826" y="0" width="827" height="2125" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog" timestamp="1582765898812">
+      <screen x="0" y="0" width="3840" height="2160" />
+    </state>
+    <state x="826" y="0" width="827" height="2125" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog/0.0.3840.2160@0.0.3840.2160" timestamp="1582765898812" />
+    <state x="411" y="400" width="1075" height="1148" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1585777249361">
+      <screen x="0" y="0" width="3840" height="2160" />
+    </state>
+    <state x="411" y="400" width="1075" height="1148" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.3840.2160@0.0.3840.2160" timestamp="1585777249361" />
+    <state x="485" y="855" width="663" height="237" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582067809318">
+      <screen x="0" y="0" width="3840" height="2160" />
+    </state>
+    <state x="485" y="855" width="663" height="237" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.3840.2160@0.0.3840.2160" timestamp="1582067809318" />
+    <state x="2321" y="618" width="1260" height="954" key="find.popup" timestamp="1589052482029">
+      <screen x="0" y="0" width="3840" height="2160" />
+    </state>
+    <state x="2321" y="618" width="1260" height="954" key="find.popup/0.0.3840.2160@0.0.3840.2160" timestamp="1589052482029" />
+    <state x="660" y="369" width="758" height="1029" key="refactoring.ChangeSignatureDialog" timestamp="1581950676608">
+      <screen x="0" y="0" width="3840" height="2160" />
+    </state>
+    <state x="660" y="369" width="758" height="1029" key="refactoring.ChangeSignatureDialog/0.0.3840.2160@0.0.3840.2160" timestamp="1581950676608" />
+    <state x="452" y="499" key="run.anything.popup" timestamp="1585792515416">
+      <screen x="0" y="0" width="3840" height="2160" />
+    </state>
+    <state x="452" y="499" key="run.anything.popup/0.0.3840.2160@0.0.3840.2160" timestamp="1585792515416" />
+    <state x="453" y="483" width="1009" height="1470" key="search.everywhere.popup" timestamp="1589397636562">
+      <screen x="0" y="0" width="3840" height="2160" />
+    </state>
+    <state x="453" y="483" width="1009" height="1470" key="search.everywhere.popup/0.0.3840.2160@0.0.3840.2160" timestamp="1589397636562" />
+  </component>
+</project>
