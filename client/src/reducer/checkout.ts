@@ -1,4 +1,4 @@
-import {Action, Movie, ReducerState} from "../types/AppTypes";
+import {Action, Movie, CartReducerState} from "../types/AppTypes";
 import isEqual from "lodash/isEqual";
 
 export const initialState = {
@@ -6,7 +6,7 @@ export const initialState = {
     items: []
 };
 
-export function checkoutReducer(state:ReducerState, action:Action) {
+export function checkoutReducer(state:CartReducerState, action:Action) {
     switch (action.type) {
         case 'ADD_ITEM':
             return {

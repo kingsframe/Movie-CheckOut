@@ -10,7 +10,7 @@ export function PageContainer() {
 
     return <Switch>
         <Route path="/" exact>
-            <HomeContainer onCheckout={dispatch} />;
+            <HomeContainer onCheckout={dispatch} cart={cart}/>;
         </Route>
 
         <Route path="/checkout" exact>

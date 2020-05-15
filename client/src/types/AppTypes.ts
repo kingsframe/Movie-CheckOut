@@ -18,7 +18,7 @@ export const MovieSearchData = t.type({
 
 export type MovieSearchData = t.TypeOf<typeof MovieSearchData>
 
-export type ReducerState = {
+export type CartReducerState = {
     count: number,
     items: Movie[]
 };
