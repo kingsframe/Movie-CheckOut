@@ -11,11 +11,21 @@ const useStyles = makeStyles((theme: Theme) =>
             justifyItems: 'center'
         },
         searchBox: {
-            marginTop: '64px'
+            marginTop: theme.spacing(8)
         },
         list: {
+            marginTop: theme.spacing(4),
             width: '100%',
             backgroundColor: theme.palette.background.paper
+        },
+        card: {
+            marginTop: theme.spacing(4),
+            paddingTop: theme.spacing(4),
+            paddingBottom: theme.spacing(8),
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            justifyContent: 'center'
         },
         fab: {
             position: 'absolute',
@@ -27,6 +37,10 @@ const useStyles = makeStyles((theme: Theme) =>
             position: 'absolute',
             bottom: theme.spacing(2),
             right: theme.spacing(2),
+            backgroundColor: blue[500]
+        },
+        browseAgain: {
+            top: theme.spacing(4),
             backgroundColor: blue[500]
         },
         inline: {

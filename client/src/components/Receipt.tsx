@@ -1,57 +1,41 @@
-import React, {Dispatch, useState} from "react";
+import React from "react";
+import {useHistory} from "react-router-dom";
 import {
+    Card,
     Container,
-    createStyles,
     Fab,
-    List,
-    ListItem, ListItemIcon,
-    ListItemText,
-    ListSubheader,
-    TextField,
-    Theme
+    Typography
 } from "@material-ui/core";
-import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
-import {makeStyles} from "@material-ui/core/styles";
-import MovieIcon from '@material-ui/icons/Movie';
-import * as t from "io-ts";
-import {blue, green} from "@material-ui/core/colors";
+import {green} from "@material-ui/core/colors";
 import {CheckCircleOutline} from "@material-ui/icons";
+import useStyles from "../styles/AppStyles";
+import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 
-const useStyles = makeStyles((theme: Theme) =>
-    createStyles({
-        root: {
-            display: 'flex',
-            flexDirection: 'column',
-            justifyItems: 'center'
-        },
-        searchBox: {
-            marginTop: '64px'
-        },
-        list: {
-            width: '100%',
-            backgroundColor: theme.palette.background.paper
-        },
-        fab: {
-            position: 'absolute',
-            bottom: theme.spacing(2),
-            right: theme.spacing(2),
-            backgroundColor: blue[500]
-        },
-        inline: {
-            display: 'inline',
-        },
-    }),
-);
-
-export default function Receipt(props: { }) {
+export default function Receipt(props: {}) {
     const classes = useStyles();
+    const history = useHistory();
 
     return <Container className={classes.root} maxWidth="sm">
-        <CheckCircleOutline style={{
-            color: green[500],
-            fontSize: 64,
-            margin: 'auto',
-            width: "100%"
-        }}/>
+        <Card className={classes.card}>
+            <CheckCircleOutline style={{
+                color: green[500],
+                fontSize: 64,
+                margin: 'auto',
+                width: "100%"
+            }}/>
+            <Typography variant="h5" component="h2" gutterBottom>
+                Your Order has been submitted
+            </Typography>
+            <Typography variant="body2" component="p">
+                We will send you a confirmation email
+            </Typography>
+            <Typography variant="body2" component="p" gutterBottom>
+                Your Order ID is {Math.random()*100000000000000000}
+            </Typography>
+            <Fab className={classes.browseAgain} aria-label="browse-again" variant="extended" onClick={()=>history.push('/')}>
+                <ShoppingCartIcon/>
+                Browse again
+            </Fab>
+        </Card>
     </Container>;
 }
