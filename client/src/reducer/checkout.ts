@@ -18,6 +18,11 @@ export function checkoutReducer(state:CartReducerState, action:Action) {
                 count: state.count - 1,
                 items: state.items.filter((item:Movie) => !isEqual(item, action.item))
             };
+        case 'CLEAR_CART':
+            return {
+                count: 0,
+                items: []
+            };
         default:
             throw new Error();
     }

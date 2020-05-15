@@ -2,7 +2,7 @@ import React, {Dispatch, useState} from "react";
 import useSWR from "swr";
 import {pipe} from 'fp-ts/lib/pipeable';
 import {fold} from "fp-ts/lib/Either";
-import {Container, TextField,} from "@material-ui/core";
+import {Container, TextField, Typography,} from "@material-ui/core";
 
 import apikey from "../apikey.json";
 import {Action, CartReducerState, MovieSearchData} from "../types/AppTypes";
@@ -30,7 +30,9 @@ export default function HomeContainer(props: { onCheckout: Dispatch<Action>, car
         />
 
         {pipe(decodedData, fold(
-            () => <div>Please enter a search term</div>,
+            () => <Typography variant="h6" component="h6">
+                Please enter a search term
+            </Typography>,
             data => <MovieDisplay data={data} dispatch={props.onCheckout} cart={props.cart}/>))
         }
     </Container>;

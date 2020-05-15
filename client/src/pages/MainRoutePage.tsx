@@ -18,7 +18,7 @@ export function MainRoutePage() {
         </Route>
 
         <Route path="/receipt" exact>
-            <Receipt />;
+            <Receipt onComplete={dispatch}/>;
         </Route>
     </Switch>
 }

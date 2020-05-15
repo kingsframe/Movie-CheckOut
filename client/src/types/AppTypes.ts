@@ -25,4 +25,5 @@ export type CartReducerState = {
 
 export type Action =
     | { type: 'ADD_ITEM', item: Movie}
-    | { type: 'REMOVE_ITEM', item: Movie};
+    | { type: 'REMOVE_ITEM', item: Movie}
+    | { type: 'CLEAR_CART'};
