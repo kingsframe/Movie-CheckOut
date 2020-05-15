@@ -2,58 +2,17 @@ import React, {Dispatch, useState} from "react";
 import {useHistory} from "react-router-dom";
 import useSWR from "swr";
 import apikey from "../apikey.json";
-import {
-    Avatar,
-    Checkbox,
-    Container,
-    Fab,
-    List,
-    ListItem,
-    ListItemAvatar,
-    ListItemSecondaryAction,
-    ListItemText,
-    TextField,
-} from "@material-ui/core";
+import {Container, Fab, List, TextField,} from "@material-ui/core";
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 
 import {pipe} from 'fp-ts/lib/pipeable';
 import {fold} from "fp-ts/lib/Either";
-import {Action, CartReducerState, Movie, MovieSearchData} from "../types/AppTypes";
+import {Action, CartReducerState, MovieSearchData} from "../types/AppTypes";
 import useStyles from "../styles/AppStyles";
+import {MovieListItem} from "../components/MovieListItem";
 
 function ErrorComponent() {
     return <div>ERROR!@!!!</div>;
-}
-
-function MovieListItem(props: { details: Movie, dispatch: Dispatch<Action> }) {
-    const [isChecked, setIsChecked] = useState(false);
-    const onClick = () => {
-        if (isChecked) {
-            props.dispatch({type: 'REMOVE_ITEM', item: props.details});
-        } else {
-            props.dispatch({type: 'ADD_ITEM', item: props.details});
-        }
-        setIsChecked(!isChecked);
-    };
-    return (
-        <ListItem button
-                  onClick={onClick}>
-            <ListItemAvatar>
-                <Avatar
-                    alt={props.details.Title}
-                    src={props.details.Poster}
-                />
-            </ListItemAvatar>
-            <ListItemText id={props.details.imdbID} primary={props.details.Title} secondary={props.details.Year}/>
-            <ListItemSecondaryAction>
-                <Checkbox
-                    edge="end"
-                    checked={isChecked}
-                    onChange={onClick}
-                />
-            </ListItemSecondaryAction>
-        </ListItem>
-    );
 }
 
 function MovieDisplayComponent(props: { data?: MovieSearchData, dispatch: Dispatch<Action>, cart: CartReducerState }) {
