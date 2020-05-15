@@ -1,6 +1,6 @@
 import React, {useReducer} from "react";
 import {Route, Switch} from "react-router-dom";
-import Home from "../pages/Home";
+import HomeContainer from "./HomeContainer";
 import Checkout from "../pages/Checkout";
 import Receipt from "../pages/Receipt";
 import {checkoutReducer, initialState} from "../reducer/checkout";
@@ -10,7 +10,7 @@ export function PageContainer() {
 
     return <Switch>
         <Route path="/" exact>
-            <Home onCheckout={dispatch} />;
+            <HomeContainer onCheckout={dispatch} />;
         </Route>
 
         <Route path="/checkout" exact>

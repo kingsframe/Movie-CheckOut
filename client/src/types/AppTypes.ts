@@ -1,6 +1,6 @@
 import * as t from "io-ts";
 
-const Movie = t.type({
+export const Movie = t.type({
     Title: t.string,
     Year: t.string,
     imdbID: t.string,
@@ -9,6 +9,14 @@ const Movie = t.type({
 });
 
 export type Movie = t.TypeOf<typeof Movie>
+
+export const MovieSearchData = t.type({
+    Search: t.array(Movie),
+    totalResults: t.string,
+    Response: t.string,
+});
+
+export type MovieSearchData = t.TypeOf<typeof MovieSearchData>
 
 export type ReducerState = {
     count: number,

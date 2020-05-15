@@ -6,7 +6,6 @@ import {
     Avatar,
     Checkbox,
     Container,
-    createStyles,
     Fab,
     List,
     ListItem,
@@ -14,41 +13,13 @@ import {
     ListItemSecondaryAction,
     ListItemText,
     TextField,
-    Theme
 } from "@material-ui/core";
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
-import pink from '@material-ui/core/colors/pink';
 
-import * as t from "io-ts";
 import {pipe} from 'fp-ts/lib/pipeable';
 import {fold} from "fp-ts/lib/Either";
-import {makeStyles} from "@material-ui/core/styles";
-
-const useStyles = makeStyles((theme: Theme) =>
-    createStyles({
-        root: {
-            display: 'flex',
-            flexDirection: 'column',
-            justifyItems: 'center'
-        },
-        searchBox: {
-            marginTop: '64px'
-        },
-        list: {
-            width: '100%',
-            backgroundColor: theme.palette.background.paper
-        },
-        fab: {
-            position: 'absolute',
-            bottom: theme.spacing(6),
-            right: theme.spacing(6),
-            backgroundColor: pink[500]
-        },
-        inline: {
-            display: 'inline',
-        },
-    }),
-);
+import {Action, Movie, MovieSearchData} from "../types/AppTypes";
+import useStyles from "../styles/AppStyles";
 
 function ErrorComponent() {
     return <div>ERROR!@!!!</div>;
@@ -98,7 +69,7 @@ function MovieDisplayComponent(props: { data?: MovieSearchData, dispatch: Dispat
         </List>;
 }
 
-export default function Home(props: { onCheckout: Dispatch<Action> }) {
+export default function HomeContainer(props: { onCheckout: Dispatch<Action> }) {
     const classes = useStyles();
     const [searchQuery, setSearchQuery] = useState<string>("");
     const {data, error} = useSWR(searchQuery ? `http://www.omdbapi.com/?apikey=${apikey.key}&s=${searchQuery}` : null);
@@ -124,32 +95,3 @@ export default function Home(props: { onCheckout: Dispatch<Action> }) {
         }
     </Container>;
 }
-
-type Action =
-    | { type: 'ADD_ITEM', item: Movie }
-    | { type: 'REMOVE_ITEM', item: Movie };
-
-export enum Type {
-    Game = "game",
-    Movie = "movie",
-}
-
-const Movie = t.type({
-    Title: t.string,
-    Year: t.string,
-    imdbID: t.string,
-    Type: t.string,
-    Poster: t.string,
-});
-
-const MovieSearchData = t.type({
-    Search: t.array(Movie),
-    totalResults: t.string,
-    Response: t.string,
-});
-
-type Movie = t.TypeOf<typeof Movie>
-type MovieSearchData = t.TypeOf<typeof MovieSearchData>
-
-
-
