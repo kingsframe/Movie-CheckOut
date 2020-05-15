@@ -1,6 +1,7 @@
 import React, {Dispatch, useState} from "react";
 import {useHistory} from "react-router-dom";
 import useSWR from "swr";
+import apikey from "../apikey.json";
 import {
     Avatar,
     Checkbox,
@@ -101,9 +102,8 @@ function MovieDisplayComponent(props: { data?: MovieSearchData, dispatch: Dispat
 
 export default function Home(props: { onCheckout: Dispatch<Action> }) {
     const classes = useStyles();
-
     const [searchQuery, setSearchQuery] = useState<string>("");
-    const {data, error} = useSWR(searchQuery ? `http://www.omdbapi.com/?apikey=3ff908c4&s=${searchQuery}` : null);
+    const {data, error} = useSWR(searchQuery ? `http://www.omdbapi.com/?apikey=${apikey.key}&s=${searchQuery}` : null);
 
     if (error) return <div>failed to load</div>;
 
@@ -152,33 +152,6 @@ const MovieSearchData = t.type({
 
 type Movie = t.TypeOf<typeof Movie>
 type MovieSearchData = t.TypeOf<typeof MovieSearchData>
-// const MovieResult = t.union([MovieSearchError, MovieSearchData]);
-
-// export type MovieSearch = MovieResult | MovieSearchError;
-
-// export interface MovieSearchError {
-//     Response: string;
-//     Error: string;
-// }
-
-// const MovieSearchError = t.type({
-//     Response: t.string,
-//     Error: t.string,
-// });
-
-// export interface MovieResult {
-//     Search: Search[];
-//     totalResults: string;
-//     Response: string;
-// }
-//
-// export interface Search {
-//     Title: string;
-//     Year: string;
-//     imdbID: string;
-//     Type: Type;
-//     Poster: string;
-// }
 
 
 
