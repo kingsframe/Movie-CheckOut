@@ -1,11 +1,10 @@
 import React from "react";
 import {BrowserRouter as Router} from "react-router-dom";
-import {PageContainer} from "./containers/PageContainer";
+import {MainRoutePage} from "./pages/MainRoutePage";
 import {CssBaseline} from "@material-ui/core";
 import {SWRConfig} from 'swr';
 
 export default function App() {
-
     return <SWRConfig
         value={{
             refreshInterval: 3000,
@@ -14,7 +13,7 @@ export default function App() {
     >
         <CssBaseline/>
         <Router>
-            <PageContainer/>
+            <MainRoutePage/>
         </Router>
     </SWRConfig>;
 }

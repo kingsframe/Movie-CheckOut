@@ -1,10 +1,10 @@
 import React, {Dispatch, useState} from "react";
 import useSWR from "swr";
-import apikey from "../apikey.json";
-import {Container, TextField,} from "@material-ui/core";
-
 import {pipe} from 'fp-ts/lib/pipeable';
 import {fold} from "fp-ts/lib/Either";
+import {Container, TextField,} from "@material-ui/core";
+
+import apikey from "../apikey.json";
 import {Action, CartReducerState, MovieSearchData} from "../types/AppTypes";
 import useStyles from "../styles/AppStyles";
 import {MovieDisplay} from "../components/MovieDisplay";
