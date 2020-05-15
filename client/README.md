@@ -16,6 +16,6 @@ Make Your Api Key in the root directory under name `apikey.json`
 ```
 //apikey.json
 {
-  "key": "3ff908c4"
+  "key": "xxxxxxxx"
 }
 ```

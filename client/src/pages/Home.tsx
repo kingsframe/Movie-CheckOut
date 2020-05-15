@@ -55,7 +55,6 @@ function ErrorComponent() {
 }
 
 function MovieListItem(props: { details: Movie, dispatch: Dispatch<Action> }) {
-    const classes = useStyles();
     const [isChecked, setIsChecked] = useState(false);
     const onClick = () => {
         if (isChecked) {
@@ -84,7 +83,6 @@ function MovieListItem(props: { details: Movie, dispatch: Dispatch<Action> }) {
             </ListItemSecondaryAction>
         </ListItem>
     );
-
 }
 
 function MovieDisplayComponent(props: { data?: MovieSearchData, dispatch: Dispatch<Action> }) {
